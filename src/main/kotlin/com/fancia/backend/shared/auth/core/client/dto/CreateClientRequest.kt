@@ -9,6 +9,7 @@ data class CreateClientRequest(
     ) val clientId: String?,
     val clientName: String?,
     val redirectUris: Set<String>,
+    val postLogoutRedirectUris: Set<String>,
     val scopes: Set<String>,
     val clientAuthenticationMethods: Set<String>,
     val authorizationGrantTypes: Set<String>,
